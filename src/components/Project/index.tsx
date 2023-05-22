@@ -33,7 +33,7 @@ export const Project = (): JSX.Element => {
       const json = await data.json();
 
       setRepositories(json);
-
+      console.log(json);
       return json;
     };
 
@@ -53,7 +53,6 @@ export const Project = (): JSX.Element => {
             >
               {repository.name}
             </ProjectTitle>
-
             <ProjectStack>
               <Text type="body2" color="grey2">
                 Primary Language:
